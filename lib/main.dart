@@ -14,6 +14,16 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        /* dark theme settings */
+      ),
+      themeMode: ThemeMode.dark,
+      /* ThemeMode.system to follow system theme,
+         ThemeMode.light for light theme,
+         ThemeMode.dark for dark theme
+      */
+      debugShowCheckedModeBanner: false,
     );
   }
 }
